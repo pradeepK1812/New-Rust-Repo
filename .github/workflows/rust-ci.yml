@@ -41,5 +41,7 @@ jobs:
       - name: Run linter (clippy)
         run: cargo clippy --workspace -- -D warnings
 
+
       - name: Check formatting
+        working directory : . 
         run: cargo fmt -- --check
